@@ -22,11 +22,13 @@ $ docker-compose up
 ```
 
 ### 3.データベースの初期化
-コンテナ上のデータベースへ接続してSQLを実行します。
+コンテナ上のデータベースへ接続します。
 ```
-$ docker exec -it mysql mysql techc
-[mysql] source /home/USER_NAME/sysDev-late/init.sql
+$ docker exec -it mysql mysql
 ```
+SQLを実行します。
+`~/sysdev/init.sql`を実行する
+
 ### 4.動作の確認
 ブラウザ上で動作確認をします。
 http://YOUR_IP/login.php に接続します。
